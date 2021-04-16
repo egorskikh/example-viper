@@ -64,7 +64,7 @@
 		7BCC6C182628691200262A1D /* ExampleVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				7BCC6C2F262869BE00262A1D /* Resurce */,
+				7BCC6C2F262869BE00262A1D /* Resource */,
 				7BCC6C2E2628694F00262A1D /* HelloWorldModule */,
 				7BCC6C192628691200262A1D /* AppDelegate.swift */,
 				7BCC6C1B2628691200262A1D /* SceneDelegate.swift */,
@@ -85,14 +85,14 @@
 			path = HelloWorldModule;
 			sourceTree = "<group>";
 		};
-		7BCC6C2F262869BE00262A1D /* Resurce */ = {
+		7BCC6C2F262869BE00262A1D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				7BCC6C272628691500262A1D /* Info.plist */,
 				7BCC6C222628691500262A1D /* Assets.xcassets */,
 				7BCC6C242628691500262A1D /* LaunchScreen.storyboard */,
 			);
-			path = Resurce;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
