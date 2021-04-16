@@ -16,7 +16,7 @@
 		7BCC6C1E2628691200262A1D /* HelloWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C1D2628691200262A1D /* HelloWorldVC.swift */; };
 		7BCC6C232628691500262A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCC6C222628691500262A1D /* Assets.xcassets */; };
 		7BCC6C262628691500262A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCC6C242628691500262A1D /* LaunchScreen.storyboard */; };
-		7BCC6C3226286A1200262A1D /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C3126286A1200262A1D /* Protocol.swift */; };
+		7BCC6C3226286A1200262A1D /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C3126286A1200262A1D /* Contract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		7BCC6C222628691500262A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BCC6C252628691500262A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BCC6C272628691500262A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BCC6C3126286A1200262A1D /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		7BCC6C3126286A1200262A1D /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 		7BCC6C2E2628694F00262A1D /* HelloWorldModule */ = {
 			isa = PBXGroup;
 			children = (
-				7BCC6C3126286A1200262A1D /* Protocol.swift */,
+				7BCC6C3126286A1200262A1D /* Contract.swift */,
 				7B8DB15C26286CB5006DAFC2 /* HelloWorldPresenter.swift */,
 				7BCC6C1D2628691200262A1D /* HelloWorldVC.swift */,
 				7B8DB16226286F45006DAFC2 /* HelloWorldInteractor.swift */,
@@ -171,7 +171,7 @@
 				7B8DB15D26286CB5006DAFC2 /* HelloWorldPresenter.swift in Sources */,
 				7B8DB16026286E85006DAFC2 /* HelloWorldEntity.swift in Sources */,
 				7B8DB16726286F7E006DAFC2 /* HelloWorldRouter.swift in Sources */,
-				7BCC6C3226286A1200262A1D /* Protocol.swift in Sources */,
+				7BCC6C3226286A1200262A1D /* Contract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
