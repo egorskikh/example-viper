@@ -7,14 +7,18 @@
 
 import Foundation
 
-class HelloWorldPresenter: EntityOutput {
+class HelloWorldPresenter: ViewToPresenter  {
+  
+    weak var view: PresenterToView?
+    var interactor: PresenterToInteractor?
     
-    weak var view: HelloWorldView!
-    var helloWorldProvider: HelloWorldProvider!
+}
+
+extension HelloWorldPresenter: EntityProvider  {
     
-    func receiveHelloWorld(helloWorldData: HW) {
-        let strHelloWorld = helloWorldData.helloWorld
-        self.view.setLabel(text: strHelloWorld)
-        self.view.setupLabelConstraint()
+    func receiveHelloWorld(helloWorld: HW) {
+        let strHelloWorld = helloWorld.helloWorld
+        view?.setLabel(helloWorld: strHelloWorld)
     }
+    
 }

@@ -8,9 +8,9 @@
 import UIKit
 
 class HelloWorldVC: UIViewController {
-    // MARK: - VIPER
     
-    var eventHandler: HelloWorldViewEventHandler!
+    // MARK: - VIPER
+    var presentor: ViewToPresenter!
     
     // MARK: - Property
     
@@ -26,14 +26,14 @@ class HelloWorldVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        presentor.interactor?.provideHelloWorldData()
         setupLabelConstraint()
+        print("View did load. Text labal - \(helloWorld.text!)")
     }
     
     // MARK: - Setup Constraint
-    
     func setupLabelConstraint() {
-        self.eventHandler.setupLabelConstraint()
-        
         view.addSubview(helloWorld)
         NSLayoutConstraint.activate([
             helloWorld.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -41,15 +41,14 @@ class HelloWorldVC: UIViewController {
         ])
     }
     
-    
 }
 
-// MARK: - VIPER: HelloWorldView
+// MARK: - VIPER: PresenterToView
 
-extension HelloWorldVC: HelloWorldView {
+extension HelloWorldVC: PresenterToView {
     
-    func setLabel(text: String) {
-        self.helloWorld.text = text
+    func setLabel(helloWorld: String) {
+        self.helloWorld.text = helloWorld
     }
     
 }

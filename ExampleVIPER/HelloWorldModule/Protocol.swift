@@ -7,21 +7,24 @@
 
 import Foundation
 
-protocol HelloWorldViewEventHandler {
-    func setupLabelConstraint()
-}
-
 // View -> Presenter
-protocol HelloWorldView: class {
-    func setLabel(text: String)
-    func setupLabelConstraint()
+protocol ViewToPresenter: class {
+    var view: PresenterToView? { get set }
+    var interactor: PresenterToInteractor? { get set }
 }
 
-// Interactor -> Presenter
-protocol HelloWorldProvider {
+// Presenter -> View
+protocol PresenterToView: class {
+     func setLabel(helloWorld: String)
+}
+
+// Entity -> Project
+protocol EntityProvider: class {
+    func receiveHelloWorld(helloWorld: HW)
+}
+
+// Presenter -> Interactor
+protocol PresenterToInteractor: class {
     func provideHelloWorldData()
 }
-// Entity -> Intercator
-protocol EntityOutput: class {
-    func receiveHelloWorld(helloWorldData: HW)
-}
+

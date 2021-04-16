@@ -14,7 +14,6 @@
 		7BCC6C1A2628691200262A1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C192628691200262A1D /* AppDelegate.swift */; };
 		7BCC6C1C2628691200262A1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C1B2628691200262A1D /* SceneDelegate.swift */; };
 		7BCC6C1E2628691200262A1D /* HelloWorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C1D2628691200262A1D /* HelloWorldVC.swift */; };
-		7BCC6C212628691200262A1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCC6C1F2628691200262A1D /* Main.storyboard */; };
 		7BCC6C232628691500262A1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BCC6C222628691500262A1D /* Assets.xcassets */; };
 		7BCC6C262628691500262A1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BCC6C242628691500262A1D /* LaunchScreen.storyboard */; };
 		7BCC6C3226286A1200262A1D /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCC6C3126286A1200262A1D /* Protocol.swift */; };
@@ -29,7 +28,6 @@
 		7BCC6C192628691200262A1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BCC6C1B2628691200262A1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7BCC6C1D2628691200262A1D /* HelloWorldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldVC.swift; sourceTree = "<group>"; };
-		7BCC6C202628691200262A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BCC6C222628691500262A1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BCC6C252628691500262A1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BCC6C272628691500262A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,9 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				7BCC6C3126286A1200262A1D /* Protocol.swift */,
+				7B8DB15C26286CB5006DAFC2 /* HelloWorldPresenter.swift */,
 				7BCC6C1D2628691200262A1D /* HelloWorldVC.swift */,
 				7B8DB16226286F45006DAFC2 /* HelloWorldInteractor.swift */,
-				7B8DB15C26286CB5006DAFC2 /* HelloWorldPresenter.swift */,
 				7B8DB15F26286E85006DAFC2 /* HelloWorldEntity.swift */,
 				7B8DB16626286F7E006DAFC2 /* HelloWorldRouter.swift */,
 			);
@@ -93,7 +91,6 @@
 				7BCC6C272628691500262A1D /* Info.plist */,
 				7BCC6C222628691500262A1D /* Assets.xcassets */,
 				7BCC6C242628691500262A1D /* LaunchScreen.storyboard */,
-				7BCC6C1F2628691200262A1D /* Main.storyboard */,
 			);
 			path = Resurce;
 			sourceTree = "<group>";
@@ -157,7 +154,6 @@
 			files = (
 				7BCC6C262628691500262A1D /* LaunchScreen.storyboard in Resources */,
 				7BCC6C232628691500262A1D /* Assets.xcassets in Resources */,
-				7BCC6C212628691200262A1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,14 +178,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7BCC6C1F2628691200262A1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BCC6C202628691200262A1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7BCC6C242628691500262A1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

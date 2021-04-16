@@ -7,14 +7,17 @@
 
 import Foundation
 
-class HelloWorldInteractor: HelloWorldProvider {
+class HelloWorldInteractor: PresenterToInteractor {
     
-    weak var output: EntityOutput!
-    
+    var presenter: EntityProvider!
+
     func provideHelloWorldData() {
         let helloWorld = HW()
-        output.receiveHelloWorld(helloWorldData: helloWorld)
+        presenter.receiveHelloWorld(helloWorld: helloWorld)
     }
-        
+    
     
 }
+
+
+
