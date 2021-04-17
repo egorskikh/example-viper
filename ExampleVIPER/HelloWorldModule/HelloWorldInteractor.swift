@@ -7,7 +7,7 @@
 
 import Foundation
 
-class HelloWorldInteractor: PresenterToInteractor {
+class HelloWorldInteractor: InteractorToPresenter {
     
     var presenter: EntityProvider!
 

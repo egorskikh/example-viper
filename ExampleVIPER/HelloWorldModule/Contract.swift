@@ -10,7 +10,7 @@ import Foundation
 // View -> Presenter
 protocol ViewToPresenter {
     var view: PresenterToView? { get set }
-    var interactor: PresenterToInteractor? { get set }
+    var interactor: InteractorToPresenter? { get set }
 }
 
 // Presenter -> View
@@ -23,8 +23,8 @@ protocol EntityProvider {
     func receiveHelloWorld(helloWorld: HW)
 }
 
-// Presenter -> Interactor
-protocol PresenterToInteractor {
+// Interactor -> Presenter
+protocol InteractorToPresenter {
     func provideHelloWorldData()
 }
 

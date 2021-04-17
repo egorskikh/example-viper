@@ -10,7 +10,7 @@ import Foundation
 class HelloWorldPresenter: ViewToPresenter  {
   
     weak var view: PresenterToView?
-    var interactor: PresenterToInteractor?
+    var interactor: InteractorToPresenter?
     
 }
 
